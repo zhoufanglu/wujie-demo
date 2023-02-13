@@ -52,5 +52,8 @@
       box-sizing: border-box;
       overflow: hidden;
     }
+    .content {
+      width: 100%;
+    }
   }
 </style>

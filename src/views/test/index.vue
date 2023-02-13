@@ -4,7 +4,6 @@
     <button @click="clearUserInfo">清空store用户信息</button>
     <button @click="getUserInfo">获取store用户信息</button>
     <button @click="setUserInfo">setStore用户信息</button>
-    <longList></longList>
   </div>
 </template>
 
@@ -26,8 +25,7 @@
       age: 18
     })
   }
-  onMounted(() => {
-  })
+  onMounted(() => {})
 
   // getTest()
 </script>

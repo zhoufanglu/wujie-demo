@@ -23,6 +23,11 @@ export function useMenu() {
           name: 'child-app-1',
           path: '/child-app-1',
           appFrom: 'child-app'
+        },
+        {
+          name: 'userManage',
+          path: '/userManage',
+          appFrom: 'userManage'
         }
       ]
     }
