@@ -1,13 +1,8 @@
 <template>
   <div class="child-app-1">
-    <WujieVue
-      width="100%"
-      height="100%"
-      name="child-app-1"
-      :alive="true"
-      :url="url"
-      :sync="true"
-    ></WujieVue>
+    {{ viteUrl }}
+    <!-- sync路由是否同步， 同步会编码   -->
+    <WujieVue width="100%" height="100%" name="child-app-1" :url="viteUrl"></WujieVue>
     <!--    :sync="true"
     :fetch="fetch"
     :props="props"
@@ -20,16 +15,20 @@
 </template>
 
 <script setup lang="ts">
+  import { computed } from 'vue'
+  import { useRoute } from 'vue-router'
   import { useWujie } from '@/views/test/child-apps/child-app-1/useWujie'
+  import hostMap from '@/tools/hosMap'
+  const route = useRoute()
   const { url, fetch, props, beforeLoad, beforeMount, afterMount, beforeUnmount, afterUnmount } =
     useWujie()
-
-  const jump = (name) => {
-    console.log(20, name)
-  }
+  const viteUrl = computed(() => {
+    //http://192.168.16.189:9001/test
+    return hostMap('//192.168.16.189:9001/') + route.params.path
+  })
 </script>
 
 <style scoped lang="scss">
-  .test {
+  npm .test {
   }
 </style>

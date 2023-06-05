@@ -1,5 +1,5 @@
 const map: any = {
-  '//http://192.168.17.3:4001/': '//wujie-micro.github.io/demo-react17/',
+  '//192.168.9.20:9001/': '//wujie-micro.github.io/demo-react17/',
   '//localhost:7200/': '//wujie-micro.github.io/demo-vue2/',
   '//localhost:7300/': '//wujie-micro.github.io/demo-vue3/',
   '//localhost:7400/': '//wujie-micro.github.io/demo-angular12/',

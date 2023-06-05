@@ -23,7 +23,7 @@ const err = (err: AxiosError): Promise<AxiosError> => {
   return Promise.reject(err)
 }
 /**********************请求拦截器***********************/
-service.interceptors.request.use(async (config: AxiosRequestConfig<any>) => {
+service.interceptors.request.use(async (config: any) => {
   // token
   const token = 'mytoken'
   // eslint-disable-next-line no-unused-expressions,no-param-reassign

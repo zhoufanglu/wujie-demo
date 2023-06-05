@@ -41,7 +41,8 @@ const test: RouteRecordRaw[] = [
         component: propDemo
       },
       {
-        path: '/child-app-1',
+        path: '/child-app-1/:path',
+        name: 'child-app-1',
         component: child_app_1
       },
       {

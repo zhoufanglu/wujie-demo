@@ -138,7 +138,12 @@
   border-radius: 44px;
   box-shadow: 2px 4px 20px 0 rgba(0, 0, 0, 0.3);
 }
-
+@font-face {
+  font-family: 'iconfont';  /* Project id 3859559 */
+  src: url('//at.alicdn.com/t/c/font_3859559_xuiix9blq0a.woff2?t=1677735481143') format('woff2'),
+  url('//at.alicdn.com/t/c/font_3859559_xuiix9blq0a.woff?t=1677735481143') format('woff'),
+  url('//at.alicdn.com/t/c/font_3859559_xuiix9blq0a.ttf?t=1677735481143') format('truetype');
+}
 @font-face {
   font-family: 'iconfont'; /* Project id 2826909 */
   src: url('//at.alicdn.com/t/font_2826909_mln4k95g9ve.woff2?t=1648627451648')

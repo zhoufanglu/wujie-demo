@@ -22,7 +22,9 @@
       </el-menu>
     </div>
     <div class="content">
-      {{ activeIndex }}
+      <div style="background-color: #eee">
+        {{ activeIndex }}
+      </div>
       <router-view></router-view>
     </div>
   </div>

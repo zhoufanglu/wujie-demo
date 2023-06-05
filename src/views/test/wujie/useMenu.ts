@@ -20,15 +20,20 @@ export function useMenu() {
       name: '子-app',
       children: [
         {
-          name: 'child-app-1',
-          path: '/child-app-1',
+          name: 'child-app-1 (/test)',
+          path: '/child-app-1/test',
           appFrom: 'child-app'
         },
         {
+          name: 'child-app-1 (/table-A)',
+          path: '/child-app-1/table-A',
+          appFrom: 'child-app'
+        }
+        /*{
           name: 'userManage',
           path: '/userManage',
           appFrom: 'userManage'
-        }
+        }*/
       ]
     }
   ])
